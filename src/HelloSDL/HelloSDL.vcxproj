@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="A04.cpp" />
     <ClCompile Include="Activity.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

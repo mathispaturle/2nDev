@@ -1,9 +1,9 @@
-#pragma once
+/*#pragma once
 #include <iostream>
 #include <time.h>
 #include "SDL.h"
 
-#define RECT_SIZE 20
+#define RECT_SIZE 60
 #define WIDTH 800
 #define HEIGHT 600
 #define NEUTRAL 0
@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
 		//Update
 		randomColor(color);
 		//TO DO
-		sleep(2);
+		sleep(5);
 
 		//Background
 		SDL_SetRenderDrawColor(renderer, 0, 0, 0, 0xFF);
@@ -105,3 +105,5 @@ int main(int argc, char *argv[]) {
 
 	return 0;
 }
+
+*/
