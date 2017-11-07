@@ -24,6 +24,6 @@ using Text = struct {
 
 enum class Key { UP, DOWN, LEFT, RIGHT, NONE };
 
+enum class GameState { PLAY, MENU, EXIT };
 
-
-
+enum class SceneState{ RUNNING, GOTO, EXIT, NIL};
