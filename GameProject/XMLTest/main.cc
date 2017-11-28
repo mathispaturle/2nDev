@@ -39,29 +39,18 @@ int main() {
 
 	//Ejemplo: Imprimiendo para todos los eldleiuementos "book" del documento su valor (text content) (no se están considerando a los atributos)
 	rapidxml::xml_node<> *pRoot = doc.first_node();
+
+	Enemy e;
+
 	for (rapidxml::xml_node<> *pNode = pRoot->first_node("enemy"); pNode; pNode = pNode->next_sibling()) {
-		
-		
-		Enemy e;
 		e.name = pNode->first_attribute("name")->value();
 		e.vitality = std::stoi(pNode->first_attribute("vitality")->value());
 		e.damageAttack = std::stoi(pNode->first_attribute("damageAttack")->value());
 		e.defense = std::stoi(pNode->first_attribute("defense")->value());
-		e.frequencyAttack = std::stoi(pNode->first_attribute("frequencyAttack")->value());
+		e.frequencyAttack = std::stof(pNode->first_attribute("frequencyAttack")->value());
 		e.experience = std::stoi(pNode->first_attribute("experience")->value());
 
 		enemies.push_back(e);
-
-
-
-		/*for (const rapidxml::xml_attribute<>* attr = pNode->first_attribute(); attr; attr = attr->next_attribute()) {
-			std::cout << "- " << attr->name() << ": " << attr->value() << std::endl;
-		}*/	
-		//std::cout << pNode->name() << ": "<< enemies[count].name <<std::endl;
-		/*for (rapidxml::xml_node<> *pNodeI = pNode->first_node(); pNodeI; pNodeI = pNodeI->next_sibling()){
-			std::cout <<"- " << pNodeI->name() << ": " << pNodeI->value() << std::endl;
-		};*/
-
 	}
 
 	for (std::vector<Enemy>::iterator it = enemies.begin(); it != enemies.end(); ++it) {
