@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<enemies>
+	<enemy name="Troll" vitality="100" damageAttack="20" defense="120" frequencyAttack="5.0" experience="20" />
+	<enemy name="Ogre" vitality="200" damageAttack="30" defense="50" frequencyAttack="10.0" experience="30" />
+	<enemy name="Goblin" vitality="80" damageAttack="10" defense="80" frequencyAttack="15.0" experience="40" />
+	<enemy name="Dragon" vitality="1500" damageAttack="30" defense="200" frequencyAttack="3.5" experience="1000" />
+</enemies>
